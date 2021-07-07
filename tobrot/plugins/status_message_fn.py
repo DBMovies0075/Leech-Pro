@@ -164,7 +164,7 @@ async def exec_message_f(client, message):
 
 
 async def upload_document_f(client, message):
-    imsegd = await message.reply_text("processing ...")
+    imsegd = await message.reply_text("⌛ Processing ...")
     if message.from_user.id in AUTH_CHANNEL:
         if " " in message.text:
             recvd_command, local_file_name = message.text.split(" ", 1)
