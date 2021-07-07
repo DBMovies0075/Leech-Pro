@@ -39,7 +39,7 @@ from tobrot.helper_funcs.ytplaylist import yt_playlist_downg
 async def incoming_purge_message_f(client, message):
     """/purge command"""
     print(message.client)
-    i_m_sefg2 = await message.reply_text("Purging...", quote=True)
+    i_m_sefg2 = await message.reply_text("💀💀💀💀💀💀 Purging...", quote=True)
     if await AdminCheck(client, message.chat.id, message.from_user.id):
         aria_i_p = await aria_start()
         # Show All Downloads
@@ -57,7 +57,7 @@ async def incoming_message_f(client, message):
     #credit = await message.reply_text(
         #f"<b>⚙ Leeching For :</b> {u_men}", parse_mode="html"
     #)
-    i_m_sefg = await message.reply_text("`Processing...`", quote=True)
+    i_m_sefg = await message.reply_text("`🔃 Processing...`", quote=True)
     # get link from the incoming message
     if message.reply_to_message:
         dl_url, cf_name, _, _ = await extract_link(message.reply_to_message, "LEECH")
@@ -71,7 +71,7 @@ async def incoming_message_f(client, message):
         await i_m_sefg.edit("<b>Hey Dude !</b>\n\n 🐈 <code>Reply with Direct /Torrent Link</code>")
         return
     if dl_url is not None:
-        await i_m_sefg.edit_text("<b>Extracting Link..🤐</b>")
+        await i_m_sefg.edit_text("<b>📂 Extracting Link... 🤐</b>")
         # start the aria2c daemon
         aria_i_p = await aria_start()
         # LOGGER.info(aria_i_p)
@@ -152,7 +152,7 @@ async def incoming_youtube_dl_f(client, message):
         await i_m_sefg.edit("🐈 𝐎𝐩𝐩𝐬 𝐑𝐞𝐩𝐥𝐲 𝐰𝐢𝐭𝐡 𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐕𝐢𝐝𝐞𝐨𝐬 𝐋𝐢𝐧𝐤.")
         return
     if dl_url is not None:
-        await i_m_sefg.edit_text("𝑬𝒙𝒕𝒓𝒂𝒄𝒕𝒊𝒏𝒈 𝑳𝒊𝒏𝒌𝒔..")
+        await i_m_sefg.edit_text("🔓 𝑬𝒙𝒕𝒓𝒂𝒄𝒕𝒊𝒏𝒈 𝑳𝒊𝒏𝒌𝒔..")
         # create an unique directory
         user_working_dir = os.path.join(DOWNLOAD_LOCATION, str(current_user_id))
         # create download directory, if not exist
@@ -200,12 +200,12 @@ async def g_yt_playlist(client, message):
         if user_command == GPYTDL_COMMAND.lower():
             is_cloud = True
     else:
-        await message.reply_text("<b> Reply with Playlist link</b>", quote=True)
+        await message.reply_text("<b>👋 Reply with Playlist link</b>", quote=True)
         return
     if "youtube.com/playlist" in url:
         u_men = message.from_user.mention
         i_m_sefg = await message.reply_text(
-            f"<b>Ok Fine 🐈 {u_men} Bro!!:\n Your Request has been ADDED</b>\n\n <code> Please wait until Upload</code>",
+            f"<b>Ok Fine 🐈 {u_men} Bro!!:\n Your Request has been ADDED</b>\n\n <code> Please wait until Upload 📤</code>",
             parse_mode="html",
         )
         await yt_playlist_downg(message, i_m_sefg, client, is_cloud)
@@ -228,7 +228,7 @@ async def g_clonee(client, message):
         await gclone.link_gen_size()
     else:
         await message.reply_text(
-            "You should reply to a message, which format should be [ID of Gdrive file/folder Name of the file/folder]\nOr read Github for detailled information"
+            "You should reply to a message, which format should be [ID of Gdrive file/folder Name of the file/folder]"
         )
 
 async def rename_tg_file(client, message):
