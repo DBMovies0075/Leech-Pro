@@ -97,13 +97,16 @@ GLEECH_UNZIP_COMMAND = os.environ.get("GLEECH_UNZIP_COMMAND", "gleechunzip")
 GLEECH_ZIP_COMMAND = os.environ.get("GLEECH_ZIP_COMMAND", "gleechzip")
 YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl")
 GYTDL_COMMAND = os.environ.get("GYTDL_COMMAND", "gytdl")
-RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG", "")
+RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG", '''[DBMovies BotUpload 2]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0ARrdaM-GC0SLBYRZQAKlWfCl97PfyEEvllm_GS22FDe9oG2M3OCIe5tVY_R6K7JFdW9aSy-XAHxz5e5gkjkM8s6zdecDyYnPMIOpRhnSOEgTsM5EQrj1st5nVdE_tqCTgBq7MQZAyxToh_uY0oAN-rX3swv-5w","token_type":"Bearer","refresh_token":"1//0g4EBKLUylyY4CgYIARAAGBASNwF-L9Ir7h2repUxQ2dnDvf9QoIrByY0S8QkbkT4Ljl5-tFgFmu-EsA11m9W0llyqLzYdykdkOU","expiry":"2021-07-08T18:55:43.7830394+05:30"}
+team_drive = 0ALkDBi4-6TSKUk9PVA
+root_folder_id = ''')
 DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "Maxx TD")
 INDEX_LINK = os.environ.get("INDEX_LINK", "")
 TELEGRAM_LEECH_COMMAND = os.environ.get("TELEGRAM_LEECH_COMMAND", "tgfile_leech")
-TELEGRAM_LEECH_UNZIP_COMMAND = os.environ.get(
-    "TELEGRAM_LEECH_UNZIP_COMMAND", "tgfile_extract"
-)
+TELEGRAM_LEECH_UNZIP_COMMAND = os.environ.get("TELEGRAM_LEECH_UNZIP_COMMAND", "tgfile_extract")
 CANCEL_COMMAND_G = os.environ.get("CANCEL_COMMAND_G", "cancel")
 GET_SIZE_G = os.environ.get("GET_SIZE_G", "getsize")
 STATUS_COMMAND = os.environ.get("STATUS_COMMAND", "status")
