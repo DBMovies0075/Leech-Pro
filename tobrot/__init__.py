@@ -55,7 +55,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "539295917"))
 
 # Get these values from my.telegram.org
 # to store the channel ID who are authorized to use the bot
-AUTH_CHANNEL = [int(x) for x in os.environ.get("AUTH_CHANNEL", "539295917").split()]
+AUTH_CHANNEL = [int(x) for x in os.environ.get("AUTH_CHANNEL", "-1001592369329 -524681022").split(" ")]
 
 # the download location, where the HTTP Server runs
 DOWNLOAD_LOCATION = "./DOWNLOADS"
@@ -89,14 +89,14 @@ UN_FINISHED_PROGRESS_STR = os.environ.get("UN_FINISHED_PROGRESS_STR", "❌")
 # add offensive API
 TG_OFFENSIVE_API = os.environ.get("TG_OFFENSIVE_API", None)
 CUSTOM_FILE_NAME = os.environ.get("CUSTOM_FILE_NAME", "")
-LEECH_COMMAND = os.environ.get("LEECH_COMMAND", "leech")
-LEECH_UNZIP_COMMAND = os.environ.get("LEECH_UNZIP_COMMAND", "extract")
-LEECH_ZIP_COMMAND = os.environ.get("LEECH_ZIP_COMMAND", "archive")
-GLEECH_COMMAND = os.environ.get("GLEECH_COMMAND", "gleech")
-GLEECH_UNZIP_COMMAND = os.environ.get("GLEECH_UNZIP_COMMAND", "gleechunzip")
-GLEECH_ZIP_COMMAND = os.environ.get("GLEECH_ZIP_COMMAND", "gleechzip")
-YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl")
-GYTDL_COMMAND = os.environ.get("GYTDL_COMMAND", "gytdl")
+LEECH_COMMAND = os.environ.get("LEECH_COMMAND", "leech1")
+LEECH_UNZIP_COMMAND = os.environ.get("LEECH_UNZIP_COMMAND", "extract1")
+LEECH_ZIP_COMMAND = os.environ.get("LEECH_ZIP_COMMAND", "archiv1e")
+GLEECH_COMMAND = os.environ.get("GLEECH_COMMAND", "gleech1")
+GLEECH_UNZIP_COMMAND = os.environ.get("GLEECH_UNZIP_COMMAND", "gleechunzip1")
+GLEECH_ZIP_COMMAND = os.environ.get("GLEECH_ZIP_COMMAND", "gleechzip1")
+YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl1")
+GYTDL_COMMAND = os.environ.get("GYTDL_COMMAND", "gytdl1")
 RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG", '''[DBMovies Bot Upload 2]
 type = drive
 scope = drive
@@ -105,23 +105,23 @@ token = {"access_token":"ya29.a0ARrdaM-HJtzCIYjn1DoRfkuJ-Dh7yJAo4aF6j39J1aP9wuTf
 team_drive = 0ALkDBi4-6TSKUk9PVA''')
 DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "Bot Upload")
 INDEX_LINK = os.environ.get("INDEX_LINK", "")
-TELEGRAM_LEECH_COMMAND = os.environ.get("TELEGRAM_LEECH_COMMAND", "tgfile_leech")
-TELEGRAM_LEECH_UNZIP_COMMAND = os.environ.get("TELEGRAM_LEECH_UNZIP_COMMAND", "tgfile_extract")
-CANCEL_COMMAND_G = os.environ.get("CANCEL_COMMAND_G", "cancel")
-GET_SIZE_G = os.environ.get("GET_SIZE_G", "getsize")
-STATUS_COMMAND = os.environ.get("STATUS_COMMAND", "status")
-SAVE_THUMBNAIL = os.environ.get("SAVE_THUMBNAIL", "savethumbnail")
-CLEAR_THUMBNAIL = os.environ.get("CLEAR_THUMBNAIL", "clearthumbnail")
-UPLOAD_AS_DOC = os.environ.get("UPLOAD_AS_DOC", "False")
-PYTDL_COMMAND = os.environ.get("PYTDL_COMMAND", "pytdl")
-GPYTDL_COMMAND = os.environ.get("GPYTDL_COMMAND", "gpytdl")
-LOG_COMMAND = os.environ.get("LOG_COMMAND", "log")
-CLONE_COMMAND_G = os.environ.get("CLONE_COMMAND_G", "gclone")
-UPLOAD_COMMAND = os.environ.get("UPLOAD_COMMAND", "upload")
-RENEWME_COMMAND = os.environ.get("RENEWME_COMMAND", "renewme")
-RENAME_COMMAND = os.environ.get("RENAME_COMMAND", "rename")
-TOGGLE_VID = os.environ.get("TOGGLE_VID", "upload_vid")
-TOGGLE_DOC = os.environ.get("TOGGLE_DOC", "upload_doc")
+TELEGRAM_LEECH_COMMAND = os.environ.get("TELEGRAM_LEECH_COMMAND", "tgfile_leech1")
+TELEGRAM_LEECH_UNZIP_COMMAND = os.environ.get("TELEGRAM_LEECH_UNZIP_COMMAND", "tgfile_extract1")
+CANCEL_COMMAND_G = os.environ.get("CANCEL_COMMAND_G", "cancel1")
+GET_SIZE_G = os.environ.get("GET_SIZE_G", "getsize1")
+STATUS_COMMAND = os.environ.get("STATUS_COMMAND", "status1")
+SAVE_THUMBNAIL = os.environ.get("SAVE_THUMBNAIL", "savethumbnail1")
+CLEAR_THUMBNAIL = os.environ.get("CLEAR_THUMBNAIL", "clearthumbnail1")
+UPLOAD_AS_DOC = os.environ.get("UPLOAD_AS_DOC", "False1")
+PYTDL_COMMAND = os.environ.get("PYTDL_COMMAND", "pytdl1")
+GPYTDL_COMMAND = os.environ.get("GPYTDL_COMMAND", "gpytdl1")
+LOG_COMMAND = os.environ.get("LOG_COMMAND", "log1")
+CLONE_COMMAND_G = os.environ.get("CLONE_COMMAND_G", "gclone1")
+UPLOAD_COMMAND = os.environ.get("UPLOAD_COMMAND", "upload1")
+RENEWME_COMMAND = os.environ.get("RENEWME_COMMAND", "renewme1")
+RENAME_COMMAND = os.environ.get("RENAME_COMMAND", "rename1")
+TOGGLE_VID = os.environ.get("TOGGLE_VID", "upload_vid1")
+TOGGLE_DOC = os.environ.get("TOGGLE_DOC", "upload_doc1")
 BOT_START_TIME = time.time()
 # dict to control uploading and downloading
 gDict = defaultdict(lambda: [])
